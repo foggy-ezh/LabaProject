@@ -6,15 +6,12 @@ package com.training.labs.first.circle;
 
 import com.training.labs.first.exception.CircleWrongRadiusException;
 import com.training.labs.first.point.Point;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 
 public class Circle {
 
     private Point center;
     private double r;
-    private static Logger logger = LogManager.getLogger();
-
+    
     public Circle(int x, int y, double r) throws CircleWrongRadiusException {
         this.setR(r);
         this.center = new Point(x, y);
